@@ -14,7 +14,8 @@
 An A/B test Analysis using two key metrics: user conversion rate and average spending per user, intending to increase revenue by improving GloBox's online marketplace homepage
 
 ### Tools
-
+- postgres SQL - to extract the user-level aggregated dataset using SQL
+- 
 ### Data Source
 ### Database Schema
 ### Data Analysis
