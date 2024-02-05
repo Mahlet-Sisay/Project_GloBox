@@ -19,9 +19,21 @@ This project aims to do an A/B test experiment for an e-commerce company called 
 - Tableau - for data visualization
   
 ### Data Source
-[GloBox_datasource](postgres://Test:bQNxVzJL4g6u@ep-noisy-flower-846766-pooler.us-east-2.aws.neon.tech/Globox)
+
+postgres://Test:bQNxVzJL4g6u@ep-noisy-flower-846766-pooler.us-east-2.aws.neon.tech/Globox
+
 ### Database Schema
+
+![database schema](https://github.com/Mahlet-Sisay/Project_GloBox/assets/137247807/8e213f5f-19d0-4f82-96b3-676ee41cfcea)
+
+### SQL queries
+- for sample size
+
+
 ### Data Analysis
+To analyze the A/B test results an inferential statistics analysis method was conducted. The necessary calculations were done using spreadsheets.
+
+
 ### Tableau visualization results 
 ### Result and Findings
 ### Recommendation
