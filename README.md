@@ -183,15 +183,58 @@ https://docs.google.com/spreadsheets/d/1lWzjKYOtGUiFxcZlSza1-RLOzkeoRYYmovjxLeZH
 |p val (0.944) < alpha(0.05)| FAIL TO REJECT Ho|
 
 **Conclusion**: The resulting p-value was 0.944, which was significantly higher than a significance level of 0.05. Therefore, we fail to reject the null hypothesis (Ho) that there is no difference in average spent per user between the control and treatment groups.
+
 #### Novelty effect
 
 In A/B testing, the "novelty effect" refers to a temporary change in user behavior or response that occurs when users are exposed to a new or changed element in the user experience.
 
-
+```sql
+--query for checking Novelty Effects
+SELECT t1.id,t1.country,t1.gender,t2.device,t2.group,t2.join_dt,
+       COALESCE(SUM(t3.spent), 0) AS total_spent,
+       CASE
+        WHEN SUM(t3.spent) > 0 THEN 1 ELSE 0
+        END AS conversion 
+FROM users AS t1
+LEFT JOIN groups AS t2
+ON t1.id = t2.uid
+LEFT JOIN activity AS t3 ON t1.id = t3.uid
+GROUP BY t1.id, t2.device,t2.group,t2.join_dt;
+```
+Query result: [download here](https://docs.google.com/spreadsheets/d/13a68_EL49R-WTjTkstQXwoar80Xun-aaY4H7NmO94-s/edit?usp=sharing)
 
 ### Tableau visualization results 
+#### Quick insght:
+1. Conversion rate vs average amount spent per user [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Conversion%20rate%20vs%20average%20amount%20spent%20per%20user#1)
+
+3. Distribution of the amount spent per user [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Distribution%20of%20the%20amount%20spent%20per%20user#1)
+
+#### Segmentation analysis:
+1. Device mertics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/The%20relationship%20between%20the%20test%20metrics%20and%20the%20user%E2%80%99s%20device#1)
+
+3. Gender metrics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Relationship%20between%20test%20metrics%20and%20user%E2%80%99s%20gender#1)
+
+5. Country metrics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Relationship%20between%20test%20metrics%20and%20user%E2%80%99s%20country#1)
+#### Novelty effect result
+[Click here](https://public.tableau.com/authoring/Noveltyeffect_16956545690180/NoveltyEffect#1)
+
 ### Result and Findings
+key insights that provided valuable context for the A/B test results:
+
+- While the conversion rate is higher in the treatment group, there isn't a significant difference in the average amount spent per user when compared to the control group. This suggests that the treatment group may not yield significantly more revenue per user.
+- Despite a lower number of IOS users participating, they exhibit substantially higher conversion rates and average spending per user.
+- Male and female user counts are similar, ensuring a fair and balanced sample. Females demonstrate both higher conversion rates and greater average spending per user.
+- Notably, the United States and Canada stand out with the highest conversion rates and average spending per user, while Australia has the lowest conversion rate and average spending. 
+
 ### Recommendation
+
+__Launch the experiment! :thumbsup: & continue iterating :arrows_clockwise:__
+
+- Launching the experiment, involving the introduction of a food and drinks banner on the GloBox website's home page, is recommended based on positive findings from a hypothesis test. The test results indicated a significant increase in the conversion rate.
+- This banner implementation is relatively low-cost in terms of engineering and operations.
+- Even if only the conversion rate improves and not the average revenue per user, it's considered a positive step in attracting more paying customers, with the potential to increase purchases in the future.
+- In summary, the recommendation is to proceed with the banner launch, understanding the current limitations and planning for future assessments with more robust data. A follow-up experiment is strongly recommended to ensure accurate conclusions.
+
 
 
 
