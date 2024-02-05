@@ -5,6 +5,7 @@
 - [Tools](#tools)
 - [Data Source](#data-source)
 - [Database Schema](#database-schema)
+- [Experimental design](#experimental-design)
 - [Data Analysis](#data-analysis)
 - [Tableau visualization results](#tableau-visualization-results)
 - [Result and Findings](#result-and-findings)
