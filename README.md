@@ -183,6 +183,11 @@ https://docs.google.com/spreadsheets/d/1lWzjKYOtGUiFxcZlSza1-RLOzkeoRYYmovjxLeZH
 |p val (0.944) < alpha(0.05)| FAIL TO REJECT Ho|
 
 **Conclusion**: The resulting p-value was 0.944, which was significantly higher than a significance level of 0.05. Therefore, we fail to reject the null hypothesis (Ho) that there is no difference in average spent per user between the control and treatment groups.
+#### Novelty effect
+
+In A/B testing, the "novelty effect" refers to a temporary change in user behavior or response that occurs when users are exposed to a new or changed element in the user experience.
+
+
 
 ### Tableau visualization results 
 ### Result and Findings
