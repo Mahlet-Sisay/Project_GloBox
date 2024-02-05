@@ -164,8 +164,25 @@ LEFT JOIN
 | Control group | 3.375 |
 | Treatment group | 3.391 |
 
+#### Analysis results
+The A/B test analysis was done using spreadsheets. [Download here](
+https://docs.google.com/spreadsheets/d/1lWzjKYOtGUiFxcZlSza1-RLOzkeoRYYmovjxLeZHrKE/edit#gid=1443676962)
 
+**1. For hypothesis test I**:
 
+|Mertic | result|
+|------ | ------|
+|p val (0.00011) < alpha(0.05)| REJECT Ho|
+
+**Conclusion**: The resulting p-value was 0.00011, which was significantly less than a significance level of 0.05. Therefore, we reject the null hypothesis (Ho) that there is no difference in the user conversion rate between the control and treatment groups.
+
+**1. For hypothesis test II**: 
+
+|Mertic | result|
+|------ | ------|
+|p val (0.944) < alpha(0.05)| FAIL TO REJECT Ho|
+
+**Conclusion**: The resulting p-value was 0.944, which was significantly higher than a significance level of 0.05. Therefore, we fail to reject the null hypothesis (Ho) that there is no difference in average spent per user between the control and treatment groups.
 
 ### Tableau visualization results 
 ### Result and Findings
