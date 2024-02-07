@@ -208,7 +208,7 @@ Query result: [download here](https://docs.google.com/spreadsheets/d/13a68_EL49R
 #### Quick insght:
 1. Conversion rate vs average amount spent per user [Click here](https://public.tableau.com/app/profile/mahlet.sisay/viz/Testgroupcomparision/Conversionratevsaverageamountspentperuser)
 
-3. Distribution of the amount spent per user [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Distribution%20of%20the%20amount%20spent%20per%20user#1)
+3. Distribution of the amount spent per user [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Distributionoftheamountspentperuser#1)
 
 #### Segmentation analysis:
 1. Device mertics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/The%20relationship%20between%20the%20test%20metrics%20and%20the%20user%E2%80%99s%20device#1)
