@@ -211,11 +211,11 @@ Query result: [download here](https://docs.google.com/spreadsheets/d/13a68_EL49R
 3. Distribution of the amount spent per user [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Distributionoftheamountspentperuser#1)
 
 #### Segmentation analysis:
-1. Device mertics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/The%20relationship%20between%20the%20test%20metrics%20and%20the%20user%E2%80%99s%20device#1)
+1. Device mertics [Click here](https://public.tableau.com/app/profile/mahlet.sisay/viz/Devicemertics/Therelationshipbetweenthetestmetricsandtheusersdevice)
 
-3. Gender metrics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Relationship%20between%20test%20metrics%20and%20user%E2%80%99s%20gender#1)
+3. Gender metrics [Click here](https://public.tableau.com/app/profile/mahlet.sisay/viz/Gendermetrics_17073257688300/Relationshipbetweentestmetricsandusersgender)
 
-5. Country metrics [Click here](https://public.tableau.com/authoring/GLOBOXPROJECTDECEMBER2023/Sheet1/Relationship%20between%20test%20metrics%20and%20user%E2%80%99s%20country#1)
+5. Country metrics [Click here](https://public.tableau.com/app/profile/mahlet.sisay/viz/Countrymertics/Relationshipbetweentestmetricsanduserscountry)
 #### Novelty effect result
 [Click here](https://public.tableau.com/authoring/Noveltyeffect_16956545690180/NoveltyEffect#1)
 
